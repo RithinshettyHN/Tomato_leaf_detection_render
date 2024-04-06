@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Disease Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leaf Disease Prediction</h1>
+        {% for record in data %}
+            <div class="record">
+                <h2>Predicted Disease: {{ record['predicted_disease'] }}</h2>
+                <!-- <img src="{{ record['image_path'] }}" alt="Leaf Image"> -->
+            </div>
+            <hr>
+        {% endfor %}
+    </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">Copyright &copy; 2024 B T Venkatesh Murthy</span>
+        </div>
+    </footer>
+</body>
+</html>
