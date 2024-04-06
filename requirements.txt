@@ -3,3 +3,4 @@ Pillow
 Gunicorn
 NumPy
 TensorFlow
+pymongo
